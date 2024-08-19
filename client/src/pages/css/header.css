@@ -10,16 +10,43 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  overflow: hidden;
 }
 
-.rebecca {
+.rebecca-text {
   font-size: 3rem;
   color: #f7c059;
   font-weight: 700;
   cursor: pointer;
   transition: 0.5s ease;
+  display: block;
 }
 
-.rebecca:hover{
+.rebecca-text:hover {
   transform: scale(1.05);
+}
+
+
+.hbg-menu {
+  display: none;
+}
+
+.hbg-menu img {
+  height: 15%;
+  width: 15%;
+}
+
+@media(max-width: 500px) {
+  .header-container {
+    position: initial;
+    margin-top: 20px;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+  }
 }

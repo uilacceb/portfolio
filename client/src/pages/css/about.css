@@ -1,18 +1,21 @@
-.about-container {
+section {
   min-height: 100vh;
-  padding: 5rem 9% 5rem;
+  padding: 10rem 7% 5rem;
+}
+
+
+.about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8rem;
   background-color: #202020;
-
 }
 
 
-.about-content,
+.about-container,
 .about-content h1 {
-  font-size: 6rem;
+  font-size: 4.3rem;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -23,22 +26,31 @@
 
 
 .about-content h3 {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   font-weight: 700;
 }
 
+.about-content p {
+  line-height: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
 /* .profile-pic{
-  border-radius: 80%;
+  border-radius: 50%;
 } */
 
 .profile-pic img {
   position: relative;
-  width: 33vw;
-  /* border-radius: 80%; */
+  width: 32vw;
+  /* border-radius: 50%; */
   box-shadow: 0 0 25px solid #b74b4b;
-  /* cursor: pointer; */
+  cursor: pointer;
   transition: 0.2s linear;
+  transform: scale(1.35);
 }
 
 .profile-pic img:hover {
@@ -46,9 +58,6 @@
   font-weight: 500;
 }
 
-.introduction {
-  font-size: 20px;
-}
 
 
 /* .button-download{
@@ -86,21 +95,21 @@
 .button-download:hover {
   transform: scale3d(1.03);
   background-color: #f7c059;
-  color:#202020;
+  color: #202020;
   box-shadow: 0 0 25px #f7c059;
 }
 
-.typing-text{
+.typing-text {
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
 }
 
-.typing-text span{
+.typing-text span {
   position: relative;
 }
 
-.typing-text span::before{
+.typing-text span::before {
   content: "Web Developer";
   color: #f7c059;
   animation: words 10s infinite;
@@ -132,3 +141,38 @@
   41%, 60%{
       content: "Web Designer";
   }} */
+
+@media(max-width:500px) {
+  .about-container {
+    flex-direction: column;
+    margin: 1.5rem 4rem;
+  }
+
+  .about-container,
+  .about-content h3 {
+    font-size: 1.82rem;
+  }
+
+  .about-container h1 {
+    margin-top: 3.5rem;
+  }
+
+  .about-container h3{
+    margin-bottom: 30px;
+  }
+
+  .profile-pic img {
+    width: 80vw;
+    margin-top: 1.5rem;
+  }
+
+  .button-download {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  section {
+    padding: 0;
+  }
+
+}
