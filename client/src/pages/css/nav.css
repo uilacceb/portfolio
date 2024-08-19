@@ -13,38 +13,35 @@
   border-bottom: 3px solid #f7c059;
 }
 
-@media (max-width:995px) {
+@media (max-width: 990px) {
   .nav-container {
     position: absolute;
-    display: none;
+    display: none; /* Hide by default */
     top: 0;
     right: 0;
     width: 40%;
     border-left: 3px solid #f7c059;
     border-bottom: 3px solid #f7c059;
     border-bottom-left-radius: 2rem;
-    padding: 1rem solid;
+    padding: 1rem;
     background-color: #161616;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1)
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
   }
 
-
-  .nav-container:active {
-    display: block;
+  .hbg-menu:hover + .nav-container {
+    display: block; /* Show nav-container when hovering on the hbg-menu */
   }
 
   .nav-link {
     display: block;
     font-size: 2rem;
-    /* margin: 3rem 0; */
     margin: 3rem;
   }
 
-  .nav-link:hover, .nav-link:active 
-  {
+  .nav-link:hover,
+  .nav-link:active {
     padding: 1rem;
     border-radius: 0.5rem;
   }
-
-
 }
