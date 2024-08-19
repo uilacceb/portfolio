@@ -1,0 +1,134 @@
+.about-container {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: #202020;
+
+}
+
+
+.about-content,
+.about-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.about-rebecca-text {
+  color: #f7c059;
+}
+
+
+.about-content h3 {
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* .profile-pic{
+  border-radius: 80%;
+} */
+
+.profile-pic img {
+  position: relative;
+  width: 33vw;
+  /* border-radius: 80%; */
+  box-shadow: 0 0 25px solid #b74b4b;
+  /* cursor: pointer; */
+  transition: 0.2s linear;
+}
+
+.profile-pic img:hover {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.introduction {
+  font-size: 20px;
+}
+
+
+/* .button-download{
+  width: 150px;
+  border: 2px solid black;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.05rem;
+} */
+
+/* .button-download:hover {
+  border: none;
+  transition: 0.5s;
+  background-color: #f7c059;
+} */
+
+
+.button-download {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: #202020;
+  border-radius: 4rem;
+  font-size: 1.15rem;
+  color: #f7c059;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  border: 2px solid #f7c059;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+.button-download:hover {
+  transform: scale3d(1.03);
+  background-color: #f7c059;
+  color:#202020;
+  box-shadow: 0 0 25px #f7c059;
+}
+
+.typing-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+  content: "Web Developer";
+  color: #f7c059;
+  animation: words 10s infinite;
+}
+
+/* .typing-text span::after{
+  content: "";
+  background-color: #202020;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  border-left: 3px solid 202020;
+  right: -8;
+  animation: cursor 0.6s infinite;
+}
+
+
+@keyframes cursor{
+  to{
+      border-left: 3px solid #f7c059;
+  }
+}
+
+@keyframes words{
+  0%, 20%{
+      content: "Developer";
+  }
+  
+  41%, 60%{
+      content: "Web Designer";
+  }} */
