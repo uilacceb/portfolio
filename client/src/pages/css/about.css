@@ -109,11 +109,11 @@ section {
   position: relative;
 }
 
-.typing-text span::before {
+/* .typing-text span::before {
   content: "Web Developer";
   color: #f7c059;
   animation: words 10s infinite;
-}
+} */
 
 /* .typing-text span::after{
   content: "";
@@ -141,6 +141,45 @@ section {
   41%, 60%{
       content: "Web Designer";
   }} */
+
+
+
+
+  .typing-text {
+    position: relative;
+    color: #f7c059;
+    display: inline-block;
+  }
+  
+  .cursor {
+    display: inline-block;
+    background-color: #f7c059;
+    animation: blink 0.8s steps(2) infinite;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+
+
 
 @media(max-width:500px) {
   .about-container {
