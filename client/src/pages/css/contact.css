@@ -7,7 +7,7 @@
 
 .title {
   color: hsl(39, 91%, 66%);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ input,
 
 .real-info {
   padding-top: 150px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding-left: 10px;
 }
@@ -129,15 +129,16 @@ input,
 .contact-detail {
   color: white;
 }
+
 /* 
 body {
-  overflow-x: hidden; Prevent horizontal scrolling
+  overflow-x: hidden; //Prevent horizontal scrolling
 } */
 
 /* Apply scaling for screen sizes below 1440px */
-@media (max-width: 1439px) {
+@media only screen and (max-width: 1439px) {
   body {
-    transform: scale(0.8);  
+    transform: scale(0.8);
     transform-origin: top center;
   }
 }
@@ -147,26 +148,37 @@ body {
   .form-container {
     justify-content: space-evenly;
   }
-  
+
   .contact-info {
     margin-right: 45px;
   }
 }
 
 /* Tablet View - Medium Screens */
-@media (min-width: 681px) and (max-width: 1024px) {
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
+  section{
+    padding-top:20px;
+  }
   .form-container {
-    max-width: 1680px;
+    display: block;
   }
 
   .contact-info {
-    margin-right: 45px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .real-info {
+    padding-top: 15px;
   }
 
   .title {
-    color: hsl(39, 91%, 66%);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  textarea {
+    width: 110%;
+    resize: none;
   }
 }
 
@@ -186,7 +198,7 @@ body {
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.73rem;
   }
 
   textarea {
