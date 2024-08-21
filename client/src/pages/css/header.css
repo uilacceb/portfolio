@@ -16,10 +16,16 @@
 .rebecca-text {
   font-size: 3rem;
   color: #f7c059;
+  ;
   font-weight: 700;
   cursor: pointer;
   transition: 0.5s ease;
   display: block;
+}
+
+.liu-text {
+  color: white;
+  text-shadow: 0 0 15px #f7c059;
 }
 
 .rebecca-text:hover {
@@ -38,9 +44,9 @@
 }
 
 
-@media(max-width: 990px) {
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
   .header-container {
-    position: initial;
+    position: relative;
     margin-top: 20px;
     width: 100%;
     padding: 1rem 9%;
@@ -48,11 +54,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    align-items: center;
+    /* Center items vertically */
+    padding: 1rem 9%;
+    overflow: visible;
     z-index: 100;
 
   }
 
-  .hbg-menu {
+  /* .hbg-menu {
     display: initial;
     display: flex;
     justify-content: flex-end;
@@ -62,12 +73,20 @@
     height: 15%;
     cursor: pointer;
     width: 15%;
+  } */
+
+
+  .rebecca {
+    text-align: center;
+    /* Center the text */
+    margin-bottom: 2rem;
+    /* Add some space between the text and the nav */
   }
 }
 
-@media(max-width: 500px) {
+@media only screen and (max-width: 680px) {
   .header-container {
-    position: initial;
+    position: relative;
     margin-top: 20px;
     width: 100%;
     padding: 1rem 9%;
@@ -75,19 +94,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    align-items: center;
+    /* Center items vertically */
+    padding: 1rem 9%;
+    overflow: visible;
     z-index: 100;
 
   }
-  .hbg-menu img {
-    height: 50%;
-    cursor: pointer;
-    width: 50%;
+  .rebecca {
+    text-align: center;
+    /* Center the text */
+    margin-bottom: 2rem;
+    /* Add some space between the text and the nav */
   }
-
-  .hbg-menu {
-    display: initial;
-    display: flex;
-    justify-content: flex-end;
-  }
-
 }

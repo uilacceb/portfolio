@@ -17,37 +17,34 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 990px) {
-  .nav-container {
-    position: absolute;
-    display: none;
-    /* Hide by default */
-    top: 0;
-    right: 0;
-    width: 40%;
-    border-left: 3px solid #f7c059;
-    border-bottom: 3px solid #f7c059;
-    border-bottom-left-radius: 2rem;
-    padding: 1rem;
-    background-color: #161616;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    z-index: 100;
-  }
 
-  .hbg-menu:hover+.nav-container {
-    display: block;
-    /* Show nav-container when hovering on the hbg-menu */
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
   }
 
   .nav-link {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem;
+    margin-left: 1rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 680px) {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
   }
 
-  .nav-link:hover,
-  .nav-link:active {
-    padding: 1rem;
-    border-radius: 0.5rem;
+  .nav-link {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    margin-right: 10px;
   }
+
 }
