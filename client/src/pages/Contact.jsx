@@ -1,5 +1,4 @@
 import Email from '../assets/icons/email.png';
-import Call from '../assets/icons/telephone.png';
 import GitHub from '../assets/icons/github.png';
 import LinkedIn from '../assets/icons/linkedin.png';
 import "./css/contact.css"
@@ -16,12 +15,8 @@ const Contact = () => {
               <h2 className='title'>Get in touch with me</h2>
               <div className='real-info'>
                 <div className="contact-item">
-                  <img className="icon" src={Call} alt="Call Logo" />
-                  <span className="contact-detail">Phone: +1 437-808-0922</span>
-                </div>
-                <div className="contact-item">
                   <img className="icon" src={Email} alt="Email Logo" />
-                  <a className="contact-detail" href="mailto:qu6qu6g@gmail.com">Email: qu6qu6g@gmail.com</a>
+                  <a className="contact-detail" href="mailto:uilacceb@gmail.com">uilacceb@gmail.com</a>
                 </div>
                 <div className="contact-item">
                   <img className="icon" src={LinkedIn} alt="LinkedIn Logo" />

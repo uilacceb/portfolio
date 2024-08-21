@@ -1,21 +1,8 @@
+/* Global Styles (Applied to all screen sizes) */
 .icon {
   height: 25px;
   width: 25px;
   margin-right: 10px;
-}
-
-
-
-.contact-item {
-  display: flex;
-  justify-content: baseline;
-  align-items: center;
-  margin-top: 20px;
-}
-
-
-.form-container {
-  display: flex;
 }
 
 .title {
@@ -24,23 +11,33 @@
   font-weight: 600;
 }
 
+.contact-item {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-container {
+  display: flex;
+}
+
 .title-div {
   text-align: center;
 }
 
-.form-right{
-  border:0.5px solid rgb(245, 184, 86);
-  padding:60px 50px;
+.form-right {
+  border: 0.5px solid rgb(245, 184, 86);
+  padding: 60px 40px;
   border-radius: 10px;
   box-shadow: 0 0 40px rgba(255, 210, 96, 0.508);
-  /* box-shadow: 10px 10px 10px rgb(112, 112, 112); */
+  transform: scale(0.95);
 }
 
 .message-form input {
   border: none;
   background-color: transparent;
 }
-
 
 .form-col {
   display: block;
@@ -51,7 +48,7 @@
   line-height: 1.6;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
-  margin-top: 15px
+  margin-top: 15px;
 }
 
 .message-form .form-col h5 {
@@ -68,18 +65,12 @@
   font-weight: 450;
   padding-top: 1.66em;
   transition: all .2s ease-in-out;
-
-}
-
-.form-right {
-  margin-left: 500px;
 }
 
 input {
   cursor: text;
   color: white;
 }
-
 
 .btn-div {
   margin-top: 50px;
@@ -118,6 +109,88 @@ input {
   border-radius: 10px;
 }
 
-input, .field{
+input,
+.field {
   font-size: 1.12rem;
+}
+
+.contact-info {
+  padding: 60px 40px;
+  transform: scale(0.95);
+}
+
+.real-info {
+  padding-top: 150px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.contact-detail {
+  color: white;
+}
+/* 
+body {
+  overflow-x: hidden; Prevent horizontal scrolling
+} */
+
+/* Apply scaling for screen sizes below 1440px */
+@media (max-width: 1439px) {
+  body {
+    transform: scale(0.8);  
+    transform-origin: top center;
+  }
+}
+
+/* Laptop/Desktop View - Large Screens */
+@media (min-width: 1025px) {
+  .form-container {
+    justify-content: space-evenly;
+  }
+  
+  .contact-info {
+    margin-right: 45px;
+  }
+}
+
+/* Tablet View - Medium Screens */
+@media (min-width: 681px) and (max-width: 1024px) {
+  .form-container {
+    max-width: 1680px;
+  }
+
+  .contact-info {
+    margin-right: 45px;
+  }
+
+  .title {
+    color: hsl(39, 91%, 66%);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+/* Mobile View - Small Screens */
+@media only screen and (max-width: 680px) {
+  .form-container {
+    display: block;
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .real-info {
+    padding-top: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    width: 120%;
+    resize: none;
+  }
 }
