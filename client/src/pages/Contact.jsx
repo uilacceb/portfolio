@@ -2,16 +2,19 @@ import Email from '../assets/icons/email.png';
 import GitHub from '../assets/icons/github.png';
 import LinkedIn from '../assets/icons/linkedin.png';
 import "./css/contact.css"
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 
 
 const Contact = () => {
   const form = useRef();
+  const [title, setTitle] = useState('Leave me a message!');
+  const [titleStyle, setTitleStyle] = useState({ color: '#f7c059', 'font-size':'2rem' })
 
   const sendEmail = (e) => {
     e.preventDefault();
+
 
     emailjs
       .sendForm('service_all7s92', 'template_umo91um', form.current, {
@@ -20,9 +23,21 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setTitle('Message successfully sent out!');
+          setTitleStyle({ color: '#66ff66','font-size':'2.2rem' }); 
+          setTimeout(() => {
+            setTitle('Leave me a message!');
+            setTitleStyle({ color: '#f7c059','font-size':'2rem' })
+          }, 2000);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setTitle('ERROR! Please try again!');
+          setTitleStyle({ color: '#ff8566','font-size':'2.2rem'}); 
+          setTimeout(() => {
+            setTitle('Leave me a message!');
+            setTitleStyle({ color: '#f7c059','font-size':'2rem' })
+          }, 2000);
         },
       );
   };
@@ -53,7 +68,7 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <div className='form-right'>
               <div className='title-div'>
-                <h1 className='title'>Leave me a message!</h1>
+                <h1 className='title' style={titleStyle}>{title}</h1>
               </div>
               <div className='message-form'>
                 <div className="form-col">
