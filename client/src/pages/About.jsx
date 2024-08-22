@@ -59,7 +59,7 @@ const About = () => {
             Hello! My name is <span className="about-rebecca-text">Rebecca</span>. I am a Front-end Developer, passionate about coding. With a background in Centennial College, I have developed strong skills in HTML, CSS, JavaScript, and React. I am always eager to learn and explore new things. I strive to bring creativity and dedication to everything I do.
           </p>
           <div>
-            <a id="download_button" href="/Rebecca Yining Liu CV.pdf" download>
+            <a id="download_button" href="/YINING-LIU CV.pdf" download>
               <button className="button-download">Download CV</button>
             </a>
           </div>
