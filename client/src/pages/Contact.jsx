@@ -2,32 +2,55 @@ import Email from '../assets/icons/email.png';
 import GitHub from '../assets/icons/github.png';
 import LinkedIn from '../assets/icons/linkedin.png';
 import "./css/contact.css"
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_all7s92', 'template_umo91um', form.current, {
+        publicKey: 'hEPgTva9FDL_VgTBn',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <>
 
       <section>
-        <form>
-          <div className="form-container">
-            <div className="contact-info">
-              <h2 className='title'>Get in touch with me</h2>
-              <div className='real-info'>
-                <div className="contact-item">
-                  <img className="icon" src={Email} alt="Email Logo" />
-                  <a className="contact-detail" href="mailto:uilacceb@gmail.com">uilacceb@gmail.com</a>
-                </div>
-                <div className="contact-item">
-                  <img className="icon" src={LinkedIn} alt="LinkedIn Logo" />
-                  <a className="contact-detail" href="https://www.linkedin.com/in/uilacceb/" target="_blank" rel="noopener noreferrer">Rebecca Liu</a>
-                </div>
-                <div className="contact-item">
-                  <img className="icon" src={GitHub} alt="GitHub Logo" />
-                  <a className="contact-detail" href="https://github.com/uilacceb" target="_blank" rel="noopener noreferrer">Rebecca Liu</a>
-                </div>
+
+        <div className="form-container">
+          <div className="contact-info">
+            <h2 className='title'>Get in touch with me</h2>
+            <div className='real-info'>
+              <div className="contact-item">
+                <img className="icon" src={Email} alt="Email Logo" />
+                <a className="contact-detail" href="mailto:uilacceb@gmail.com">uilacceb@gmail.com</a>
+              </div>
+              <div className="contact-item">
+                <img className="icon" src={LinkedIn} alt="LinkedIn Logo" />
+                <a className="contact-detail" href="https://www.linkedin.com/in/uilacceb/" target="_blank" rel="noopener noreferrer">Rebecca Liu</a>
+              </div>
+              <div className="contact-item">
+                <img className="icon" src={GitHub} alt="GitHub Logo" />
+                <a className="contact-detail" href="https://github.com/uilacceb" target="_blank" rel="noopener noreferrer">Rebecca Liu</a>
               </div>
             </div>
+          </div>
+          <form ref={form} onSubmit={sendEmail}>
             <div className='form-right'>
               <div className='title-div'>
                 <h1 className='title'>Leave me a message!</h1>
@@ -84,8 +107,9 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+
 
       </section>
     </>
