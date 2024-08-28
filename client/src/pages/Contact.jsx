@@ -10,11 +10,31 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
   const [title, setTitle] = useState('Leave me a message!');
-  const [titleStyle, setTitleStyle] = useState({ color: '#f7c059', 'font-size':'2rem' })
+  const [titleStyle, setTitleStyle] = useState({ color: '#f7c059', 'font-size': '2rem' })
+
+
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+
+
+
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (name.trim() == "" || message.trim() == "") {
+      setTitle("Please do not leave any field blank!")
+      setTitleStyle({'text-shadow': '0 0 20px #f7c059', color: 'white' });
+      setTimeout(() => {
+        setTitle('Leave me a message!');
+        setTitleStyle({ color: '#f7c059', 'font-size': '2rem' })
+      }, 2000);
+      return;
+    }
 
     emailjs
       .sendForm('service_all7s92', 'template_umo91um', form.current, {
@@ -23,20 +43,24 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+
           setTitle('Message successfully sent out!');
-          setTitleStyle({ color: '#66ff66','font-size':'2.2rem' }); 
+          setTitleStyle({'text-shadow': '0 0 20px #f7c059', color: 'white' });
           setTimeout(() => {
             setTitle('Leave me a message!');
-            setTitleStyle({ color: '#f7c059','font-size':'2rem' })
+            setTitleStyle({ color: '#f7c059', 'font-size': '2rem' })
           }, 2000);
+          setName("");
+          setEmail("")
+          setMessage("")
         },
         (error) => {
           console.log('FAILED...', error.text);
           setTitle('ERROR! Please try again!');
-          setTitleStyle({ color: '#ff8566','font-size':'2.2rem'}); 
+          setTitleStyle({ color: '#ff8566', 'font-size': '2.2rem' });
           setTimeout(() => {
             setTitle('Leave me a message!');
-            setTitleStyle({ color: '#f7c059','font-size':'2rem' })
+            setTitleStyle({ color: '#f7c059', 'font-size': '2rem' })
           }, 2000);
         },
       );
@@ -81,9 +105,10 @@ const Contact = () => {
                     type="text"
                     id="form-name"
                     name="name"
-                    defaultValue=""
-                    required=""
+                    required
                     placeholder="Your name *"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div className="form-col">
@@ -96,9 +121,10 @@ const Contact = () => {
                     type="email"
                     id="form-email"
                     name="email"
-                    defaultValue=""
-                    required=""
+                    required
                     placeholder="john@doe.com *"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="form-col">
@@ -110,11 +136,12 @@ const Contact = () => {
                     className="field"
                     id="form-message"
                     name="message"
-                    defaultValue=""
-                    required=""
+                    required
                     placeholder="Write me something..."
                     cols={50}
                     rows={6}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
                 <div className='btn-div'>
