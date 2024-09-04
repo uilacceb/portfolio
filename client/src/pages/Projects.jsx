@@ -32,7 +32,7 @@ const Projects = () => {
           />
         </Link>
         {/* project 3 */}
-        <Link to="https://tdl-frontend.vercel.app/" target="_blank">
+        <Link to="https://todolist-new-blond.vercel.app/" target="_blank">
           <ProjectCard
             title="To do list App"
             img={p3}
