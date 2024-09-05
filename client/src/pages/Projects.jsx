@@ -36,7 +36,7 @@ const Projects = () => {
           <ProjectCard
             title="To do list App"
             img={p3}
-            description="This to-do app is perfect for anyone looking for a no-fuss way to keep track of their to-do lists. Built with a clean and intuitive design, it ensures that you can easily add new tasks, edit existing ones, and mark tasks as complete with just a few clicks."
+            description="This to-do app is perfect for anyone looking for a no-fuss way to keep track of their to-do lists. Built with a clean and intuitive design, it ensures that you can easily add new tasks, delete tasks, and mark tasks as complete with just a few clicks."
             technologies="React, JS, TailwindCSS, Node.js, MongoDB"
           />
         </Link>
