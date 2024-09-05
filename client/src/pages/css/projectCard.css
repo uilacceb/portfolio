@@ -24,7 +24,7 @@
   order: 0.5px solid rgb(245, 184, 86);
   padding: 60px 40px;
   border-radius: 10px;
-  box-shadow: 0 0 40px rgba(255, 210, 96, 0.508);
+  box-shadow: 0 0 20px rgba(214, 214, 214, 0.508);
   transform: scale(0.95);
   cursor: pointer;
 }
@@ -37,11 +37,9 @@ a {
   border-radius: 15px;
 }
 
-
 .tech {
   font-size: 20px;
   margin-top: 20px;
-
 }
 
 .tech-text {
@@ -58,7 +56,8 @@ a {
 
 .pc-container:hover {
   transition: 0.5s ease;
-  transform: scale(1.005)
+  transform: scale(1.005);
+  box-shadow: 0 0 40px rgba(255, 210, 96, 0.508);
 }
 
 @media only screen and (max-width: 1025px) {
@@ -71,19 +70,13 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-
   }
-
-
 }
-
-
 
 @media only screen and (max-width: 680px) {
   .pc-container {
     width: auto;
     margin-top: 20px;
-
   }
   .project-section {
     display: grid;
