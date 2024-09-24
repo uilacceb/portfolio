@@ -14,7 +14,7 @@ const Projects = () => {
       </section> */}
       <section className="project-section">
         {/*project 1*/}
-        <Link to="https://fancy-counter-six.vercel.app/" target="_blank">
+        <Link to="https://new-fancy-counter.vercel.app/" target="_blank">
           <ProjectCard
             title="fancy counter"
             img={p1}
