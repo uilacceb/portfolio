@@ -14,12 +14,19 @@ const Projects = () => {
       </section> */}
       <section className="project-section">
         {/*project 1*/}
-        <Link to="https://e-commerce-beige-rho.vercel.app/" target="_blank">
+        <Link to="https://fancy-counter-six.vercel.app/" target="_blank">
           <ProjectCard
-            title="E-commerce shopping"
+            title="fancy counter"
             img={p1}
-            description="A shopping website that allows users to add items to their cart and automatically displays the total price of all items added"
-            technologies="React, JS, TailwindCSS"
+            description={
+              <>
+                Count up to 5 with basic version. Unlock the pro version to keep
+                counting beyond 5!
+                <br />
+                <b>P.S.</b> You can use space to increase the number.
+              </>
+            }
+            technologies="React, JS, CSS"
           />
         </Link>
         {/* project 2 */}
