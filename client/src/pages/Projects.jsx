@@ -62,7 +62,7 @@ const Projects = () => {
           <ProjectCard
             title="Word Analytics App"
             img={p5}
-            description="Word Analytic is a simple tool designed to help users quickly count words and characters in any text. Whether you're working on a document, social media post, or any writing task, this platform allows you to input or paste your text and instantly see the word and character count. It's perfect for anyone needing quick and accurate text length measurements."
+            description="Word Analytic is a simple tool designed to help users quickly count words and characters in any text. Whether you're working on a document, social media post, or any writing task, it allows you to input or paste your text and instantly see the word and character count."
             technologies="React, JS, CSS"
           />
         </Link>
