@@ -3,6 +3,7 @@ import p1 from "../assets/projects/project1.png";
 import p2 from "../assets/projects/project2.png";
 import p3 from "../assets/projects/project3.png";
 import p4 from "../assets/projects/project4.png";
+import p5 from "../assets/projects/project5.png";
 import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
@@ -54,6 +55,15 @@ const Projects = () => {
             img={p4}
             description="This Quiz App is ideal for anyone looking to test their knowledge in a fun and interactive way. Featuring a simple and user-friendly interface, it allows users to easily start a quiz, answer questions, and view their results. "
             technologies="React, JS, TailwindCSS"
+          />
+        </Link>
+        {/* project 5 */}
+        <Link to="https://word-analytic.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Word Analytics App"
+            img={p5}
+            description="Word Analytic is a simple tool designed to help users quickly count words and characters in any text. Whether you're working on a document, social media post, or any writing task, this platform allows you to input or paste your text and instantly see the word and character count. It's perfect for anyone needing quick and accurate text length measurements."
+            technologies="React, JS, CSS"
           />
         </Link>
       </section>
