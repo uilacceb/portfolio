@@ -5,6 +5,7 @@ import p3 from "../assets/projects/project3.png";
 import p4 from "../assets/projects/project4.png";
 import p5 from "../assets/projects/project5.png";
 import p6 from "../assets/projects/project6.png";
+import p7 from "../assets/projects/project7.png";
 import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
@@ -15,6 +16,15 @@ const Projects = () => {
         <h1 style={{ color: '#f7c059', fontSize: '7rem',  }}>Coming Soon...</h1>
       </section> */}
       <section className="project-section">
+        {/* project 7 */}
+        <Link to="https://pikachu-api.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Pokémon Finder"
+            img={p7}
+            description="The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name."
+            technologies="React, JS, TailwindCSS"
+          />
+        </Link>
         {/*project 1*/}
         <Link to="https://new-fancy-counter.vercel.app/" target="_blank">
           <ProjectCard
