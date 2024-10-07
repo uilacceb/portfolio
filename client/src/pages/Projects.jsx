@@ -21,8 +21,9 @@ const Projects = () => {
           <ProjectCard
             title="Pokémon Finder"
             img={p7}
-            description="The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. supports English and Chinese."
-            technologies="React, JS, TailwindCSS"
+            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br/> Supports English and Chinese.
+          </>}
+           technologies="React, JS, TailwindCSS"
           />
         </Link>
         {/*project 1*/}
