@@ -12,6 +12,9 @@ section {
   background-color: #202020;
 }
 
+.about-content{
+
+}
 
 .about-container,
 .about-content h1 {
@@ -91,6 +94,10 @@ section {
 
 .typing-text span {
   position: relative;
+}
+
+.introduction{
+  padding-top: 20px;
 }
 
 /* .typing-text span::before {
