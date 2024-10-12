@@ -60,7 +60,7 @@ const About = () => {
           </p>
 
           <p className="introduction">
-            Outside of coding, you&#39;ll likely find me exploring the city or soaking in the beauty of a park—or at home, bothering my cat with endless affection (or, as he would put it, testing the limits of his patience). It&#39;s a tough life for him, but hey, someone&#39;s got to do it!
+            Outside of coding, you&#39;ll likely find me exploring the city or soaking in the beauty of a park—or at home, bothering my cat with endless affection (or, as my cat would put it, testing the limits of his patience). It&#39;s a tough life for him, but hey, someone&#39;s got to do it!
           </p>
           <div>
             <a id="download_button" href="/YINING-LIU CV.pdf" download>
