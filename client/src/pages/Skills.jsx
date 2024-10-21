@@ -5,6 +5,7 @@ import html from "../assets/logos/html.png"
 import js from "../assets/logos/js.png"
 import node from "../assets/logos/nodejs.png"
 import react from "../assets/logos/react.png"
+import tailwind from "../assets/logos/Tailwind_CSS_Logo.svg"
 import "./css/skill.css"
 
 const Skills = () => {
@@ -18,6 +19,7 @@ const Skills = () => {
             <ul>
               <li className="skill-list"><img src={html} alt='HTML5' className="skill-icon" />HTML5</li>
               <li className="skill-list"><img src={css} alt='CSS3' className="skill-icon" /> CSS3</li>
+              <li className="skill-list"><img src={tailwind} alt='TailwindCSS' className="skill-icon" /> TailwindCSS</li>
               <li className="skill-list"><img src={js} alt='JavaScript' className="skill-icon" /> JavaScript</li>
               <li className="skill-list"><img src={react} alt='React' className="skill-icon" /> React</li>
             </ul>
