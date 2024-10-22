@@ -56,11 +56,11 @@ const About = () => {
             I&#39;m a <span className="about-rebecca-text">{displayedText}</span><span className="cursor">|</span>
           </h3>
           <p className="introduction">
-            Hello! My name is <span className="about-rebecca-text">Rebecca</span>. I am a Front-end Developer, passionate about coding. With a background in Centennial College, I have developed strong skills in HTML, CSS, JavaScript, and React. I am always eager to learn and explore new things. I strive to bring creativity and dedication to everything I do.
+            Hello! My name is <span className="about-rebecca-text">Rebecca</span>. I am a Front-end Developer focused on creating visual appealing and user friendly application.
           </p>
 
           <p className="introduction">
-            Outside of coding, you&#39;ll likely find me exploring the city or soaking in the beauty of a park—or at home, bothering my cat with endless affection (or, as my cat would put it, testing the limits of his patience). It&#39;s a tough life for him, but hey, someone&#39;s got to do it!
+            Outside of coding, you&#39;ll likely find me exploring the city or soaking in the beauty of a park—or at home, bothering my cat with endless affection (or, as my cat would put it, testing the limits of his patience).
           </p>
           <div>
             <a id="download_button" href="/YINING-LIU CV.pdf" download>
