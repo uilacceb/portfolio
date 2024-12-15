@@ -61,14 +61,14 @@ const Projects = () => {
           />
         </Link>
         {/* project 4 */}
-        <Link to="https://quiz-kappa-six.vercel.app/" target="_blank">
+        {/* <Link to="https://quiz-kappa-six.vercel.app/" target="_blank">
           <ProjectCard
             title="Quiz App"
             img={p4}
             description="This Quiz App is ideal for anyone looking to test their knowledge in a fun and interactive way. Featuring a simple and user-friendly interface, it allows users to easily start a quiz, answer questions, and view their results. "
             technologies="React, JS, TailwindCSS"
           />
-        </Link>
+        </Link> */}
         {/* project 2 */}
         <Link to="https://theater-app-frontend.vercel.app/" target="_blank">
           <ProjectCard
