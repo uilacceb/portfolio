@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 import p1 from "../assets/projects/project1.png";
 import p2 from "../assets/projects/project2.png";
 import p3 from "../assets/projects/project3.png";
-import p4 from "../assets/projects/project4.png";
+// import p4 from "../assets/projects/project4.png";
 import p5 from "../assets/projects/project5.png";
 import p6 from "../assets/projects/project6.png";
 import p7 from "../assets/projects/project7.png";
