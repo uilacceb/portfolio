@@ -1,11 +1,12 @@
 import ProjectCard from "./ProjectCard";
 import p1 from "../assets/projects/project1.png";
 import p2 from "../assets/projects/project2.png";
-import p3 from "../assets/projects/project3.png";
+//import p3 from "../assets/projects/project3.png";
 // import p4 from "../assets/projects/project4.png";
 import p5 from "../assets/projects/project5.png";
 import p6 from "../assets/projects/project6.png";
 import p7 from "../assets/projects/project7.png";
+import p8 from "../assets/projects/project8.png"
 import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
@@ -24,6 +25,14 @@ const Projects = () => {
             description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br/> Supports English and Chinese.
           </>}
            technologies="React, JS, TailwindCSS"
+          />
+        </Link>
+        <Link to="https://github.com/uilacceb/VoiceToDoFinal/tree/main" target="_blank">
+          <ProjectCard
+            title="Voice To do list App"
+            img={p8}
+            description="A simple and intuitive mobile to-do list app that makes task management effortless. Users can add tasks by typing or using voice commands to speak the task name, eliminating the need for manual input. Perfect for staying organized on the go!"
+            technologies="React Native, TypeScript, Node.js, MongoDB, GoogleAI"
           />
         </Link>
         {/*project 1*/}
@@ -79,14 +88,14 @@ const Projects = () => {
           />
         </Link>
         {/* project 3 */}
-        <Link to="https://todolist-new-blond.vercel.app/" target="_blank">
+        {/* <Link to="https://todolist-new-blond.vercel.app/" target="_blank">
           <ProjectCard
             title="To do list App"
             img={p3}
             description="This to-do app is perfect for anyone looking for a no-fuss way to keep track of their to-do lists. Built with a clean and intuitive design, it ensures that you can easily add new tasks, delete tasks, and mark tasks as complete with just a few clicks."
             technologies="React, JS, TailwindCSS, Node.js, MongoDB"
           />
-        </Link>
+        </Link> */}
       </section>
     </>
   );
