@@ -6,7 +6,8 @@ import p2 from "../assets/projects/project2.png";
 import p5 from "../assets/projects/project5.png";
 import p6 from "../assets/projects/project6.png";
 import p7 from "../assets/projects/project7.png";
-import p8 from "../assets/projects/project8.png"
+import p8 from "../assets/projects/project8.png";
+import p9  from "../assets/projects/project9.png";
 import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
@@ -33,6 +34,19 @@ const Projects = () => {
             img={p8}
             description="A simple and intuitive mobile to-do list app that makes task management effortless. Users can add tasks by typing or using voice commands to speak the task name, eliminating the need for manual input. Perfect for staying organized on the go!"
             technologies="React Native, TypeScript, Node.js, MongoDB, GoogleAI"
+          />
+        </Link>
+         {/*project 9*/}
+         <Link to="https://expense-project-frontend.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Expense Tracker"
+            img={p9}
+            description={
+              <>
+               Stay on top of your finances with this easy-to-use expense tracking app! Effortlessly add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date. With Google login support, you can securely access your data anytime, anywhere.
+              </>
+            }
+            technologies="React, JS, TailwindCSS, node.js, MongoDB"
           />
         </Link>
         {/*project 1*/}
