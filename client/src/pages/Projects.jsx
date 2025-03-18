@@ -19,16 +19,6 @@ const Projects = () => {
         <h1 style={{ color: '#f7c059', fontSize: '7rem',  }}>Coming Soon...</h1>
       </section> */}
       <section className="project-section">
-        {/* project 7 */}
-        <Link to="https://pikachu-api.vercel.app/" target="_blank">
-          <ProjectCard
-            title="Pokémon Finder"
-            img={p7}
-            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br /> Supports English and Chinese.
-            </>}
-            technologies="React, JS, TailwindCSS"
-          />
-        </Link>
         {/* project 10 */}
         <Link to="https://tcgp-frontend.vercel.app/" target="_blank">
           <ProjectCard
@@ -58,6 +48,16 @@ const Projects = () => {
               </>
             }
             technologies="React, JS, TailwindCSS, node.js, MongoDB"
+          />
+        </Link>
+        {/* project 7 */}
+        <Link to="https://pikachu-api.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Pokémon Finder"
+            img={p7}
+            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br /> Supports English and Chinese.
+            </>}
+            technologies="React, JS, TailwindCSS"
           />
         </Link>
         {/*project 1*/}
