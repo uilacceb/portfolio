@@ -7,7 +7,8 @@ import p5 from "../assets/projects/project5.png";
 // import p6 from "../assets/projects/project6.png";
 import p7 from "../assets/projects/project7.png";
 import p8 from "../assets/projects/project8.png";
-import p9  from "../assets/projects/project9.png";
+import p9 from "../assets/projects/project9.png";
+import p10 from "../assets/projects/project10.png";
 import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
@@ -23,9 +24,19 @@ const Projects = () => {
           <ProjectCard
             title="Pokémon Finder"
             img={p7}
-            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br/> Supports English and Chinese.
-          </>}
-           technologies="React, JS, TailwindCSS"
+            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br /> Supports English and Chinese.
+            </>}
+            technologies="React, JS, TailwindCSS"
+          />
+        </Link>
+        {/* project 10 */}
+        <Link to="https://tcgp-frontend.vercel.app/" target="_blank">
+          <ProjectCard
+            title="TCG Pocket shopping cards"
+            img={p10}
+            description={<>Welcome to the TCG Pocket shopping cards app: Browse the complete, up-to-date library of pocket cards, filter them by rarity or pack, and “mock buy” the ones you want to plan your perfect collection.
+            </>}
+            technologies="React, JS, CSS, node.js, MongoDB"
           />
         </Link>
         <Link to="https://github.com/uilacceb/VoiceToDoFinal/tree/main" target="_blank">
@@ -36,14 +47,14 @@ const Projects = () => {
             technologies="React Native, TypeScript, Node.js, MongoDB, GoogleAI"
           />
         </Link>
-         {/*project 9*/}
-         <Link to="https://expense-project-frontend.vercel.app/" target="_blank">
+        {/*project 9*/}
+        <Link to="https://expense-project-frontend.vercel.app/" target="_blank">
           <ProjectCard
             title="Expense Tracker"
             img={p9}
             description={
               <>
-               Stay on top of your finances with this easy-to-use expense tracking app! Effortlessly add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date. With Google login support, you can securely access your data anytime, anywhere.
+                Stay on top of your finances with this easy-to-use expense tracking app! Effortlessly add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date. With Google login support, you can securely access your data anytime, anywhere.
               </>
             }
             technologies="React, JS, TailwindCSS, node.js, MongoDB"
