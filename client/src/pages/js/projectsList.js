@@ -4,12 +4,48 @@ import p7 from "../../assets/projects/project7.png";
 import p10 from "../../assets/projects/project10.png";
 import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
-import p1 from "../../assets/projects/project1s.png";
+import p1 from "../../assets/projects/project1.png";
 
 const stacks = {
   Frontend: "frontend",
   FullStack: "full stack"
 }
+{/* project 3 */ }
+{/* <Link to="https://todolist-new-blond.vercel.app/" target="_blank">
+          <ProjectCard
+            title="To do list App"
+            img={p3}
+            description="This to-do app is perfect for anyone looking for a no-fuss way to keep track of their to-do lists. Built with a clean and intuitive design, it ensures that you can easily add new tasks, delete tasks, and mark tasks as complete with just a few clicks."
+            technologies="React, JS, TailwindCSS, Node.js, MongoDB"
+          />
+        </Link> */}
+{/* project 6 */ }
+{/* <Link to="https://tracking-app-beryl.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Travel packing helper"
+            img={p6}
+            description="Travel Packing Helper helps users manage a list of items. Whether you're preparing for a trip or managing a to-do list, this app keeps everything organized with intuitive sorting options for packed and unpacked items."
+            technologies="React, JS, CSS"
+          />
+        </Link> */}
+{/* project 5 */ }
+{/* <Link to="https://word-analytic.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Word Analytics App"
+            img={p5}
+            description="Word Analytic is a simple tool designed to help users quickly count words and characters in any text. Whether you're working on a document, social media post, or any writing task, it allows you to input or paste your text and instantly see the word and character count."
+            technologies="React, JS"
+          />
+        </Link> */}
+{/* project 4 */ }
+{/* <Link to="https://quiz-kappa-six.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Quiz App"
+            img={p4}
+            description="This Quiz App is ideal for anyone looking to test their knowledge in a fun and interactive way. Featuring a simple and user-friendly interface, it allows users to easily start a quiz, answer questions, and view their results. "
+            technologies="React, JS, TailwindCSS"
+          />
+        </Link> */}
 
 const expenseTracker = {
   title: "Expense Tracker",
@@ -73,4 +109,4 @@ const FancyCounter = {
 
 
 
-export const projects = [expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant, PokemonFinder, TheaterApp, FancyCounter];
+export const projectsList = [expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant, PokemonFinder, TheaterApp, FancyCounter];
