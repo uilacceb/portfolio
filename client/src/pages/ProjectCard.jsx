@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./css/projectCard.css"
 
-const ProjectCard = ({ title, img, description, technologies }) => {
+const ProjectCard = ({ title, img, description, technologies, stack, url }) => {
   return (
     <>
 

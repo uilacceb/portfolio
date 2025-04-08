@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
 const Projects = () => {
+  
   return (
     <>
       {/* <section style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
