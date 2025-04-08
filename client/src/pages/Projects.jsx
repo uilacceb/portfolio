@@ -3,12 +3,13 @@ import p1 from "../assets/projects/project1.png";
 import p2 from "../assets/projects/project2.png";
 //import p3 from "../assets/projects/project3.png";
 // import p4 from "../assets/projects/project4.png";
-import p5 from "../assets/projects/project5.png";
+// import p5 from "../assets/projects/project5.png";
 // import p6 from "../assets/projects/project6.png";
 import p7 from "../assets/projects/project7.png";
 import p8 from "../assets/projects/project8.png";
 import p9 from "../assets/projects/project9.png";
 import p10 from "../assets/projects/project10.png";
+import p11 from "../assets/projects/project11.png"
 import { Link } from "react-router-dom";
 import "./css/projectCard.css";
 
@@ -19,6 +20,19 @@ const Projects = () => {
         <h1 style={{ color: '#f7c059', fontSize: '7rem',  }}>Coming Soon...</h1>
       </section> */}
       <section className="project-section">
+        {/*project 9*/}
+        <Link to="https://expense-project-frontend.vercel.app/" target="_blank">
+          <ProjectCard
+            title="Expense Tracker"
+            img={p9}
+            description={
+              <>
+                Stay on top of your finances with this easy-to-use expense tracking app! Effortlessly add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date. With Google login support, you can securely access your data anytime, anywhere.
+              </>
+            }
+            technologies="React, JS, TailwindCSS, node.js, MongoDB"
+          />
+        </Link>
         {/* project 10 */}
         <Link to="https://tcgp-frontend.vercel.app/" target="_blank">
           <ProjectCard
@@ -37,17 +51,19 @@ const Projects = () => {
             technologies="React Native, TypeScript, Node.js, MongoDB, GoogleAI"
           />
         </Link>
-        {/*project 9*/}
-        <Link to="https://expense-project-frontend.vercel.app/" target="_blank">
+        {/* project 11 */}
+        <Link to="https://findgrant.ca/" target="_blank">
           <ProjectCard
-            title="Expense Tracker"
-            img={p9}
+            title="Find Grant"
+            img={p11}
             description={
               <>
-                Stay on top of your finances with this easy-to-use expense tracking app! Effortlessly add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date. With Google login support, you can securely access your data anytime, anywhere.
+                FindGrant is your gateway to diverse funding opportunities across Canada, including small business, research, sustainability, and BIPOC grants.
+                <br></br>
+                <strong>P.S.</strong>This is a capstone project for findGrant Company
               </>
             }
-            technologies="React, JS, TailwindCSS, node.js, MongoDB"
+            technologies="React Native Web, Node.js"
           />
         </Link>
         {/* project 7 */}
@@ -55,27 +71,12 @@ const Projects = () => {
           <ProjectCard
             title="Pokémon Finder"
             img={p7}
-            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br /> Supports English and Chinese.
+            description={<>The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. <br /> Supports en-US and zh-TW.
             </>}
             technologies="React, JS, TailwindCSS"
           />
         </Link>
-        {/*project 1*/}
-        <Link to="https://new-fancy-counter.vercel.app/" target="_blank">
-          <ProjectCard
-            title="fancy counter"
-            img={p1}
-            description={
-              <>
-                Count up to 5 with basic version. Unlock the pro version to keep
-                counting beyond 5!
-                <br />
-                <b>P.S.</b> You can use space to increase the number.
-              </>
-            }
-            technologies="React, JS"
-          />
-        </Link>
+
         {/* project 6 */}
         {/* <Link to="https://tracking-app-beryl.vercel.app/" target="_blank">
           <ProjectCard
@@ -86,14 +87,14 @@ const Projects = () => {
           />
         </Link> */}
         {/* project 5 */}
-        <Link to="https://word-analytic.vercel.app/" target="_blank">
+        {/* <Link to="https://word-analytic.vercel.app/" target="_blank">
           <ProjectCard
             title="Word Analytics App"
             img={p5}
             description="Word Analytic is a simple tool designed to help users quickly count words and characters in any text. Whether you're working on a document, social media post, or any writing task, it allows you to input or paste your text and instantly see the word and character count."
             technologies="React, JS"
           />
-        </Link>
+        </Link> */}
         {/* project 4 */}
         {/* <Link to="https://quiz-kappa-six.vercel.app/" target="_blank">
           <ProjectCard
@@ -121,6 +122,22 @@ const Projects = () => {
             technologies="React, JS, TailwindCSS, Node.js, MongoDB"
           />
         </Link> */}
+        {/*project 1*/}
+        <Link to="https://new-fancy-counter.vercel.app/" target="_blank">
+          <ProjectCard
+            title="fancy counter"
+            img={p1}
+            description={
+              <>
+                Count up to 5 with basic version. Unlock the pro version to keep
+                counting beyond 5!
+                <br />
+                <b>P.S.</b> You can use space to increase the number.
+              </>
+            }
+            technologies="React, JS"
+          />
+        </Link>
       </section>
     </>
   );
