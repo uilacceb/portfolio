@@ -6,7 +6,7 @@ import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
 
-const stacks = {
+export const stacks = {
   Frontend: "frontend",
   FullStack: "full stack"
 }
@@ -50,7 +50,7 @@ const stacks = {
 const expenseTracker = {
   title: "Expense Tracker",
   img: p9,
-  description: "Stay on top of your finances with this easy-to-use expense tracking app! Effortlessly add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date. With Google login support, you can securely access your data anytime, anywhere.",
+  description: "Add, edit, and delete expenses, and keep your records organized by sorting transactions by amount or date with this easy-to-use expense tracking app!. With Google login support, you can securely access your data anytime, anywhere.",
   technologies: "React, JS, TailwindCSS, node.js, MongoDB",
   url: "https://expense-project-frontend.vercel.app/",
   stack: stacks.FullStack
@@ -66,7 +66,7 @@ const TCGPShoppingCards = {
 const VoiceToDo = {
   title: "Voice To do list App",
   img: p8,
-  description: "A simple and intuitive mobile to-do list app that makes task management effortless. Users can add tasks by typing or using voice commands to speak the task name, eliminating the need for manual input. Perfect for staying organized on the go!",
+  description: "A simple mobile to-do list app that makes task management effortless. Users can add tasks by typing or using voice commands to speak the task name, eliminating the need for manual input.",
   technologies: "React Native, TypeScript, Node.js, MongoDB, GoogleAI",
   url: "https://tcgp-frontend.vercel.app/",
   stack: stacks.FullStack
