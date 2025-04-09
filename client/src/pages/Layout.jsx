@@ -4,14 +4,13 @@ import Header from './Header';
 const Layout = ({ children }) => {
   return (
     <>
-      <div>
+      <div style={{
+        display: "flex",
+        flexDirection: "column",
+      }}>
         <Header />
         <div>
-          <main >
-            <div >
-              {children}
-            </div>
-          </main>
+          {children}
         </div>
       </div>
     </>

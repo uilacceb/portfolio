@@ -1,6 +1,6 @@
 .header-container {
   /* margin-top: 20px; */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -16,7 +16,6 @@
 .rebecca-text {
   font-size: 3rem;
   color: #f7c059;
-  ;
   font-weight: 700;
   cursor: pointer;
   transition: 0.5s ease;

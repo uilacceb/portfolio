@@ -83,7 +83,7 @@ const FindGrant = {
 const PokemonFinder = {
   title: "Pokémon Finder",
   img: p7,
-  description: "The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon&#39;s official artwork along with its name. Supports en-US and zh-TW.",
+  description: "The Pokémon Finder is a simple app that lets you search for Pokémon by name or number. It fetches data from the PokéAPI and displays the Pokémon's official artwork along with its name. Supports en-US and zh-TW.",
   technologies: "React, JS, TailwindCSS",
   url: "https://pikachu-api.vercel.app/",
   stack: stacks.Frontend
@@ -101,7 +101,7 @@ const TheaterApp = {
 const FancyCounter = {
   title: "Fancy counter",
   img: p1,
-  description: "Count up to 5 with basic version. Unlock the pro version to keep counting beyond 5!You can use space to increase the number.",
+  description: "Count up to 5 with basic version. Unlock the pro version to keep counting beyond 5! You can use space to increase the number.",
   technologies: "React, JS",
   url: "https://new-fancy-counter.vercel.app/",
   stack: stacks.Frontend

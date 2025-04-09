@@ -11,36 +11,42 @@ const Projects = () => {
       {/* <section style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <h1 style={{ color: '#f7c059', fontSize: '7rem',  }}>Coming Soon...</h1>
       </section> */}
-      <section className="project-section">
-        {projectsList.map((proj) => {
-          // Check if the URL is external (starts with http or https)
-          const isExternal = /^https?:\/\//.test(proj.url);
+      <div>
+        <div className="filter-buttons-section">
+          <button className="filter-buttons">Full Stack</button>
+          <button className="filter-buttons">Frontend</button>
+        </div>
+        <section className="project-section">
+          {projectsList.map((proj) => {
+            // Check if the URL is external (starts with http or https)
+            const isExternal = /^https?:\/\//.test(proj.url);
 
-          return (
-            <>
-              {isExternal ? (
-                <a href={proj.url} target="_blank" rel="noopener noreferrer">
-                  <ProjectCard
-                    title={proj.title}
-                    description={proj.description}
-                    technologies={proj.technologies}
-                    img={proj.img}
-                  />
-                </a>
-              ) : (
-                <Link to={proj.url}>
-                  <ProjectCard
-                    title={proj.title}
-                    description={proj.description}
-                    technologies={proj.technologies}
-                    img={proj.img}
-                  />
-                </Link>
-              )}
-            </>
-          );
-        })}
-      </section>
+            return (
+              <>
+                {isExternal ? (
+                  <a href={proj.url} target="_blank" rel="noopener noreferrer">
+                    <ProjectCard
+                      title={proj.title}
+                      description={proj.description}
+                      technologies={proj.technologies}
+                      img={proj.img}
+                    />
+                  </a>
+                ) : (
+                  <Link to={proj.url}>
+                    <ProjectCard
+                      title={proj.title}
+                      description={proj.description}
+                      technologies={proj.technologies}
+                      img={proj.img}
+                    />
+                  </Link>
+                )}
+              </>
+            );
+          })}
+        </section>
+      </div>
     </>
   );
 };
