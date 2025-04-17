@@ -68,7 +68,7 @@ const VoiceToDo = {
   img: p8,
   description: "A simple mobile to-do list app that makes task management effortless. Users can add tasks by typing or using voice commands to speak the task name, eliminating the need for manual input.",
   technologies: "React Native, TypeScript, Node.js, MongoDB, GoogleAI",
-  url: "https://tcgp-frontend.vercel.app/",
+  url: "https://github.com/uilacceb/VoiceToDoFinal/",
   stack: stacks.FullStack
 }
 const FindGrant = {
