@@ -1,6 +1,6 @@
 import csharp from "../assets/logos/c-sharp.png"
 import css from "../assets/logos/css-3.png"
-// import db from "../assets/logos/database.png"
+import db from "../assets/logos/database.png"
 import expressJS from "../assets/logos/express.png"
 import html from "../assets/logos/html.png"
 import js from "../assets/logos/js.png"
@@ -9,6 +9,9 @@ import react from "../assets/logos/react.png"
 import tailwind from "../assets/logos/Tailwind_CSS_Logo.svg"
 import java from "../assets/logos/java.png"
 import python from "../assets/logos/python.png"
+import github from "../assets/icons/github.png"
+import api from "../assets/logos/api.png"
+import wordPress from "../assets/logos/wordpress.png"
 import "./css/skill.css"
 
 const Skills = () => {
@@ -42,9 +45,10 @@ const Skills = () => {
           <div className="addition-skill">
             <h2>Addition Skills</h2>
             <ul>
-              <li className="skill-list">RESTful API Development</li>
-              <li className="skill-list">Version Control (Git/GitHub)</li>
-              <li className="skill-list">Database ( SQL/MongoDB)</li>
+              <li className="skill-list"><img src={api} alt='node' className="skill-icon" />RESTful API Development</li>
+              <li className="skill-list"><img src={github} alt='node' className="skill-icon" />Version Control (Git/GitHub)</li>
+              <li className="skill-list"><img src={db} alt='node' className="skill-icon" />Database ( SQL/MongoDB)</li>
+              <li className="skill-list"><img src={wordPress} alt='node' className="skill-icon" />WordPress</li>
             </ul>
           </div>
         </div>
