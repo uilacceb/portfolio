@@ -5,6 +5,7 @@ import p10 from "../../assets/projects/project10.png";
 import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
+import p12 from "../../assets/projects/project12.png"
 
 export const stacks = {
   Frontend: "frontend",
@@ -107,6 +108,15 @@ const FancyCounter = {
   stack: stacks.Frontend
 }
 
+const WordPressPortfolio = {
+  title: "Portfolio - WordPress",
+  img: p12,
+  description: "Check out my another portfolio using WordPress!",
+  technologies: "WordPress",
+  url: "https://uilacceber.com/",
+  stack: stacks.Frontend
+}
 
 
-export const projectsList = [expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant, PokemonFinder, TheaterApp, FancyCounter];
+
+export const projectsList = [expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant,WordPressPortfolio, PokemonFinder, TheaterApp, FancyCounter, ];
