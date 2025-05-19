@@ -63,8 +63,8 @@ const About = () => {
             Outside of coding, you&#39;ll likely find me exploring the city or soaking in the beauty of a park—or at home, bothering my cat with endless affection (or, as my cat would put it, testing the limits of his patience).
           </p>
           <div>
-            <a id="download_button" href="/Rebecca Liu CV.pdf" download>
-              <button className="button-download">Download CV</button>
+            <a id="download_button" href="/Rebecca Liu Resume.pdf" download>
+              <button className="button-download">Download Resume</button>
             </a>
           </div>
         </div>
