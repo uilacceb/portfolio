@@ -6,6 +6,7 @@ import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
 import p12 from "../../assets/projects/project12.png"
+import p13 from "../../assets/projects/project13.png";
 
 export const stacks = {
   Frontend: "frontend",
@@ -117,6 +118,14 @@ const WordPressPortfolio = {
   stack: stacks.Frontend
 }
 
+const Splitter = {
+  title: "Split With You",
+  img: p13,
+  description: "Splitter is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates. Designed with a modern, intuitive interface.",
+  technologies: "React, Node.js, MongoDB, TailwindCSS, AI-Assisted Development",
+  url: "https://www.splitwithyou.com/",
+  stack: stacks.FullStack
+}
 
 
-export const projectsList = [expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant,WordPressPortfolio, PokemonFinder, TheaterApp, FancyCounter, ];
+export const projectsList = [Splitter, expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
