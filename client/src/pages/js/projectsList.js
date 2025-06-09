@@ -121,7 +121,7 @@ const WordPressPortfolio = {
 const Splitter = {
   title: "Split With You",
   img: p13,
-  description: "Splitter is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates. Designed with a modern, intuitive interface.",
+  description: "Split With You is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates. Designed with a modern, intuitive interface.",
   technologies: "React, Node.js, MongoDB, TailwindCSS, AI-Assisted Development",
   url: "https://www.splitwithyou.com/",
   stack: stacks.FullStack
