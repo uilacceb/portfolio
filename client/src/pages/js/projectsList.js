@@ -1,7 +1,7 @@
 import p9 from "../../assets/projects/project9.png";
 import p8 from "../../assets/projects/project8.png";
 import p7 from "../../assets/projects/project7.png";
-import p10 from "../../assets/projects/project10.png";
+// import p10 from "../../assets/projects/project10.png";
 import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
@@ -57,14 +57,14 @@ const expenseTracker = {
   url: "https://expense-project-frontend.vercel.app/",
   stack: stacks.FullStack
 }
-const TCGPShoppingCards = {
-  title: "TCG Pocket shopping cards",
-  img: p10,
-  description: "Welcome to the TCG Pocket shopping cards app: Browse the complete, up-to-date library of pocket cards, filter them by rarity or pack, and “mock buy” the ones you want to plan your perfect collection.",
-  technologies: "React, JS, CSS, node.js, MongoDB",
-  url: "https://tcgp-frontend.vercel.app/",
-  stack: stacks.FullStack
-}
+// const TCGPShoppingCards = {
+//   title: "TCG Pocket shopping cards",
+//   img: p10,
+//   description: "Welcome to the TCG Pocket shopping cards app: Browse the complete, up-to-date library of pocket cards, filter them by rarity or pack, and “mock buy” the ones you want to plan your perfect collection.",
+//   technologies: "React, JS, CSS, node.js, MongoDB",
+//   url: "https://tcgp-frontend.vercel.app/",
+//   stack: stacks.FullStack
+// }
 const VoiceToDo = {
   title: "Voice To do list App",
   img: p8,
@@ -128,4 +128,4 @@ const Splitter = {
 }
 
 
-export const projectsList = [Splitter, expenseTracker, TCGPShoppingCards, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
+export const projectsList = [Splitter, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
