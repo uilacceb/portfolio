@@ -7,6 +7,7 @@ import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
 import p12 from "../../assets/projects/project12.png"
 import p13 from "../../assets/projects/project13.png";
+import p14 from "../../assets/projects/project14.png";
 
 export const stacks = {
   Frontend: "frontend",
@@ -126,6 +127,14 @@ const Splitter = {
   url: "https://www.splitwithyou.com/",
   stack: stacks.FullStack
 }
+const tcgpDatabase = {
+  title: "TCGP Database",
+  img: p14,
+  description: "Welcome to the TCG Pocket shopping cards app: Browse the complete, up-to-date library of pocket cards, filter them by rarity, energy type or pack",
+  technologies: "React, Next.js, TypeScript, TailwindCSS,",
+  url: "https://tcgp-database.vercel.app/",
+  stack: stacks.Frontend
+}
 
 
-export const projectsList = [Splitter, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
+export const projectsList = [tcgpDatabase, Splitter, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];

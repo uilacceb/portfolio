@@ -12,6 +12,7 @@ import python from "../assets/logos/python.png"
 import github from "../assets/icons/github.png"
 import api from "../assets/logos/api.png"
 import wordPress from "../assets/logos/wordpress.png"
+import nextjs from "../assets/logos/nextjs.png"
 import "./css/skill.css"
 
 const Skills = () => {
@@ -39,6 +40,7 @@ const Skills = () => {
               <li className="skill-list"><img src={node} alt='node' className="skill-icon" /> Node.js</li>
               <li className="skill-list"><img src={react} alt='React' className="skill-icon" /> React/React Native</li>
               <li className="skill-list"><img src={expressJS} alt='expressJS' className="skill-icon" /> Express.js</li>
+              <li className="skill-list"><img src={nextjs} alt='Next JS' className="skill-icon" /> NextJs</li>
             </ul>
           </div>
 
