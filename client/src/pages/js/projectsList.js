@@ -122,7 +122,7 @@ const WordPressPortfolio = {
 const Splitter = {
   title: "Split With You",
   img: p13,
-  description: "Split With You is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates. Designed with a modern, intuitive interface.",
+  description: "Split With You is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates.",
   technologies: "React, Node.js, MongoDB, TailwindCSS, AI-Assisted Development",
   url: "https://www.splitwithyou.com/",
   stack: stacks.FullStack
@@ -130,7 +130,7 @@ const Splitter = {
 const tcgpDatabase = {
   title: "TCGP Database",
   img: p14,
-  description: "Welcome to the TCG Pocket shopping cards app: Browse the complete, up-to-date library of pocket cards, filter them by rarity, energy type or pack",
+  description: "TCGP Database App lets you browse the full library of pocket cards, user can filter cards by rarity, energy type, or pack, and use an AI chat to quickly find cards from natural language descriptions.T",
   technologies: "React, Next.js, TypeScript, TailwindCSS,",
   url: "https://tcgp-database.vercel.app/",
   stack: stacks.Frontend
