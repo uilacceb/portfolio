@@ -5,7 +5,7 @@ import Skills from "./pages/Skills"
 import Contact from "./pages/Contact"
 import Layout from "./pages/Layout"
 import Projects from "./pages/Projects"
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
