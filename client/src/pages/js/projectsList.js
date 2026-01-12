@@ -6,7 +6,7 @@ import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
 import p12 from "../../assets/projects/project12.png"
-import p13 from "../../assets/projects/project13.png";
+// import p13 from "../../assets/projects/project13.png";
 import p14 from "../../assets/projects/project14.png";
 
 export const stacks = {
@@ -119,14 +119,14 @@ const WordPressPortfolio = {
   stack: stacks.Frontend
 }
 
-const Splitter = {
-  title: "Split With You",
-  img: p13,
-  description: "Split With You is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates.",
-  technologies: "React, Node.js, MongoDB, TailwindCSS, AI-Assisted Development",
-  url: "https://www.splitwithyou.com/",
-  stack: stacks.FullStack
-}
+// const Splitter = {
+//   title: "Split With You",
+//   img: p13,
+//   description: "Split With You is a full-stack web application that makes splitting group expenses effortless. Users can create groups, track shared expenses, manage settlements, and keep everyone in sync with real-time updates.",
+//   technologies: "React, Node.js, MongoDB, TailwindCSS, AI-Assisted Development",
+//   url: "https://www.splitwithyou.com/",
+//   stack: stacks.FullStack
+// }
 const tcgpDatabase = {
   title: "TCGP Database",
   img: p14,
@@ -137,4 +137,4 @@ const tcgpDatabase = {
 }
 
 
-export const projectsList = [tcgpDatabase, Splitter, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
+export const projectsList = [tcgpDatabase, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
