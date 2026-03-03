@@ -5,7 +5,7 @@ import p7 from "../../assets/projects/project7.png";
 import p11 from "../../assets/projects/project11.png";
 import p2 from "../../assets/projects/project2.png";
 import p1 from "../../assets/projects/project1.png";
-import p12 from "../../assets/projects/project12.png"
+// import p12 from "../../assets/projects/project12.png"
 // import p13 from "../../assets/projects/project13.png";
 import p14 from "../../assets/projects/project14.png";
 
@@ -110,14 +110,14 @@ const FancyCounter = {
   stack: stacks.Frontend
 }
 
-const WordPressPortfolio = {
-  title: "Portfolio - WordPress",
-  img: p12,
-  description: "Check out my another portfolio using WordPress!",
-  technologies: "WordPress",
-  url: "https://uilacceber.com/",
-  stack: stacks.Frontend
-}
+// const WordPressPortfolio = {
+//   title: "Portfolio - WordPress",
+//   img: p12,
+//   description: "Check out my another portfolio using WordPress!",
+//   technologies: "WordPress",
+//   url: "https://uilacceber.com/",
+//   stack: stacks.Frontend
+// }
 
 // const Splitter = {
 //   title: "Split With You",
@@ -137,4 +137,4 @@ const tcgpDatabase = {
 }
 
 
-export const projectsList = [tcgpDatabase, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, WordPressPortfolio, TheaterApp, FancyCounter];
+export const projectsList = [tcgpDatabase, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, TheaterApp, FancyCounter];
