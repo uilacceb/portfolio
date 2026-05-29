@@ -8,6 +8,7 @@ import p1 from "../../assets/projects/project1.png";
 // import p12 from "../../assets/projects/project12.png"
 // import p13 from "../../assets/projects/project13.png";
 import p14 from "../../assets/projects/project14.png";
+import p15 from "../../assets/projects/project15.png";
 
 export const stacks = {
   Frontend: "frontend",
@@ -135,6 +136,15 @@ const tcgpDatabase = {
   url: "https://tcgp-database.vercel.app/",
   stack: stacks.Frontend
 }
+const promptfolio = {
+  title: "Promptfolio",
+  img: p15,
+  description:
+    "Promptfolio is an interactive portfolio website where users can type commands like about, projects, resume, and contact to explore my background. I also used Playwright to test the main user flows and command interactions.",
+  technologies: "React, TypeScript, Vite, CSS, Playwright",
+  url: "https://chat-portfolio-phi.vercel.app/",
+  stack: stacks.Frontend,
+};
 
 
-export const projectsList = [tcgpDatabase, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, TheaterApp, FancyCounter];
+export const projectsList = [promptfolio, tcgpDatabase, expenseTracker, VoiceToDo, FindGrant, PokemonFinder, TheaterApp, FancyCounter];
